@@ -19,84 +19,70 @@
 <div>
     <table border="0">
 	  <tr>
-	    <td>模块</td>
-	    <td>包含文件</td>
-	    <td>功能说明</td>
+	    <th>模块</th>
+	    <th>包含文件</th>
+	    <th>功能说明</th>
 	  </tr>
 	  <tr>
-	    <th>dataload</th>
-	    <th>load_MNIST_data.py</th>
-	    <th>载入MNIST数据集</th>
+	    <td>dataload</td>
+	    <td>load_MNIST_data.py</td>
+	    <td>载入MNIST数据集</td>
 	  </tr>
 	  <tr>
-	    <th>feature</th>
-	    <th>contour.py</th>
-	    <th>提取图像轮廓特征</th>
+	    <td>feature</td>
+	    <td>contour.py</td>
+	    <td>提取图像轮廓特征</td>
 	  </tr>
 	  <tr>
-	    <th> </th>
-	    <th>correct.py</th>
-	    <th>图像的偏移校正</th>
+	    <td> </td>
+	    <td>correct.py</td>
+	    <td>图像的偏移校正</td>
 	  </tr>
 	  <tr>
-	    <th> </th>
-	    <th>histogram.py</th>
-	    <th>提取图像HOG特征</th>
+	    <td> </td>
+	    <td>histogram.py</td>
+	    <td>提取图像HOG特征</td>
 	  </tr>
 	  <tr>
-	    <th> </th>
-	    <th>sharpening.py</th>
-	    <th>提取图像锐化特征</th>
+	    <td> </td>
+	    <td>sharpening.py</td>
+	    <td>提取图像锐化特征</td>
 	  </tr>
 	  <tr>
-	    <th> </th>
-	    <th>subsampling.py</th>
-	    <th>提取图像池化特征</th>
+	    <td> </td>
+	    <td>subsampling.py</td>
+	    <td>提取图像池化特征</td>
 	  </tr>
 	  <tr>
-	    <th>model</th>
-	    <th>MNIST_CNN.py</th>
-	    <th>建立CNN模型</th>
+	    <td>model</td>
+	    <td>MNIST_CNN.py</td>
+	    <td>建立CNN模型</td>
 	  </tr>
 	  <tr>
-	    <th>model</th>
-	    <th>MNIST_KNN.py</th>
-	    <th>建立KNN模型</th>
+	    <td>model</td>
+	    <td>MNIST_KNN.py</td>
+	    <td>建立KNN模型</td>
 	  </tr>
 	  <tr>
-	    <th>model</th>
-	    <th>MNIST_Softmax.py</th>
-	    <th>建立Softmax模型</th>
+	    <td>model</td>
+	    <td>MNIST_Softmax.py</td>
+	    <td>建立Softmax模型</td>
 	  </tr>
 	  <tr>
-	    <th>main</th>
-	    <th>mnist_GUI.py</th>
-	    <th>主函数体，执行GUI界面</th>
+	    <td>main</td>
+	    <td>mnist_GUI.py</td>
+	    <td>主函数体，执行GUI界面</td>
 	  </tr>
 	  <tr>
-	    <th>other</th>
-	    <th>MNIST_datasets_decode.py</th>
-	    <th>解码MNIST标准数据集</th>
+	    <td>other</td>
+	    <td>MNIST_datasets_decode.py</td>
+	    <td>解码MNIST标准数据集</td>
 	  </tr>
 	  <tr>
-	    <th> </th>
-	    <th>mnist_gui_design.py</th>
-	    <th>GUI控件布局</th>
+	    <td> </td>
+	    <td>mnist_gui_design.py</td>
+	    <td>GUI控件布局</td>
 	  </tr>
     </table>
 </div>
-|模块		|包含文件			|功能说明              |
-|dataload	|load_MNIST_data.py		|载入MNIST数据集	   |
-|feature	|contour.py			|提取图像轮廓特征      |
-|		|correct.py			|图像的偏移校正        |
-|		|histogram.py			|提取图像HOG特征       |
-|		|sharpening.py		|提取图像锐化特征      |
-|		|subsampling.py		|提取图像池化特征      |
-|model		|MNIST_CNN.py			|建立CNN模型           |
-| 		|MNIST_KNN.py			|建立KNN模型           |
-| 		|MNIST_Softmax.py		|建立Softmax模型       |
-|		|MNIST_datasets_decode.py	|解码MNIST标准数据集   |
-|主函数	|mnist_GUI.py			|主函数体，执行GUI界面 |
-|		|mnist_gui_design.py	|GUI控件布局           |
-
 
