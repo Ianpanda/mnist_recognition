@@ -14,7 +14,13 @@
 6、将tensorboard.exe所在文件夹加入系统环境路径Path之中(文件夹为“*\Scripts”，*代表用户python安装路径文件夹)。<br>
 注：安装依赖库可使用pip命令安装，如安装opencv-python可使用命令“pip install opencv-python”安装。<br>
 
-		本系统文件说明
+本系统文件说明
+---
+---
+模块: dataload  feature<br><br><br><br>  model<br><br><br>  主函数<br>
+包含文件:load_MNIST_data.py  contour.py  correct.py  histogram.py  sharpening.py  subsampling.py
+功能说明: 载入MNIST数据集  提取图像轮廓特征  图像的偏移校正  提取图像HOG特征  提取图像锐化特征  提取图像池化特征  建立CNN模型  建立KNN模型  建立Softmax模型  解码MNIST标准数据集  主函数体，执行GUI界面  GUI控件布局
+---
 |模块		|包含文件			|功能说明              |
 |dataload	|load_MNIST_data.py		|载入MNIST数据集	   |
 |feature	|contour.py			|提取图像轮廓特征      |
