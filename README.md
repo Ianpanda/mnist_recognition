@@ -1,2 +1,32 @@
 # mnist_recognition
-æ‰‹å†™ä½“æ•°å­—è¯†åˆ«çš„ç¤ºä¾‹ï¼Œç•Œé¢å¯é€‰ä¸åŒæ¨¡åž‹
+ÊÖÐ´ÌåÊý×ÖÊ¶±ðµÄÊ¾Àý£¬½çÃæ¿ÉÑ¡²»Í¬Ä£ÐÍ
+
+×÷Õß£ºIanpanda
+
+ÊµÏÖÁËÈý¸öÄ£ÐÍ¶ÔMNISTÊý¾Ý¼¯µÄÊ¶±ð(KNN¡¢Softmax¡¢CNN)
+
+±¾ÏµÍ³ÔËÐÐÐèÒªÓÃ»§È·ÈÏÒÔÏÂÒÀÀµ»·¾³ÒÑ¾­ÅäÖÃÍê³É£º
+1¡¢Python 3.5(64Î») ¼°ÒÔÉÏ°æ±¾£»<br>
+2¡¢numpy 1.13.3 ¼°ÒÔÉÏ°æ±¾£»<br>
+3¡¢TensorFlow 1.3.0 ¼°ÒÔÉÏ°æ±¾(ÈôÔËÐÐGPU°æ±¾£¬ÐèÅäÖÃcuda v8.0¼°cudnn¿â)£»<br>
+4¡¢opencv-python 3.3.1 ¼°ÒÔÉÏ°æ±¾£»<br>
+5¡¢PyQt5 5.6 ¼°ÒÔÉÏ°æ±¾£»<br>
+6¡¢½«tensorboard.exeËùÔÚÎÄ¼þ¼Ð¼ÓÈëÏµÍ³»·¾³Â·¾¶PathÖ®ÖÐ(ÎÄ¼þ¼ÐÎª¡°*\Scripts¡±£¬*´ú±íÓÃ»§python°²×°Â·¾¶ÎÄ¼þ¼Ð)¡£<br>
+×¢£º°²×°ÒÀÀµ¿â¿ÉÊ¹ÓÃpipÃüÁî°²×°£¬Èç°²×°opencv-python¿ÉÊ¹ÓÃÃüÁî¡°pip install opencv-python¡±°²×°¡£<br>
+
+			±¾ÏµÍ³ÎÄ¼þËµÃ÷
+		Ä£¿é		°üº¬ÎÄ¼þ			¹¦ÄÜËµÃ÷	<br>
+		dataload	load_MNIST_data.py		ÔØÈëMNISTÊý¾Ý¼¯	<br>
+		feature	contour.py			ÌáÈ¡Í¼ÏñÂÖÀªÌØÕ÷	<br>
+ 				correct.py			Í¼ÏñµÄÆ«ÒÆÐ£Õý	<br>
+ 				histogram.py			ÌáÈ¡Í¼ÏñHOGÌØÕ÷	<br>
+ 				sharpening.py			ÌáÈ¡Í¼ÏñÈñ»¯ÌØÕ÷	<br>
+ 				subsampling.py		ÌáÈ¡Í¼Ïñ³Ø»¯ÌØÕ÷	<br>
+		model		MNIST_CNN.py			½¨Á¢CNNÄ£ÐÍ	<br>
+ 				MNIST_KNN.py			½¨Á¢KNNÄ£ÐÍ	<br>
+ 				MNIST_Softmax.py		½¨Á¢SoftmaxÄ£ÐÍ	<br>
+				MNIST_datasets_decode.py	½âÂëMNIST±ê×¼Êý¾Ý¼¯	<br>
+		Ö÷º¯Êý		mnist_GUI.py			Ö÷º¯ÊýÌå£¬Ö´ÐÐGUI½çÃæ	<br>
+				mnist_gui_design.py		GUI¿Ø¼þ²¼¾Ö	<br>
+
+
