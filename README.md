@@ -16,11 +16,75 @@
 
 本系统文件说明
 ---
----
-模块: dataload  feature<br><br><br><br>  model<br><br><br>  主函数<br>
-包含文件:load_MNIST_data.py  contour.py  correct.py  histogram.py  sharpening.py  subsampling.py
-功能说明: 载入MNIST数据集  提取图像轮廓特征  图像的偏移校正  提取图像HOG特征  提取图像锐化特征  提取图像池化特征  建立CNN模型  建立KNN模型  建立Softmax模型  解码MNIST标准数据集  主函数体，执行GUI界面  GUI控件布局
----
+<div>
+    <table border="0">
+	  <tr>
+	    <td>模块</td>
+	    <td>包含文件</td>
+	    <td>功能说明</td>
+	  </tr>
+	  <tr>
+	    <th>dataload</th>
+	    <th>load_MNIST_data.py</th>
+	    <th>载入MNIST数据集</th>
+	  </tr>
+	  <tr>
+	    <th>feature</th>
+	    <th>contour.py</th>
+	    <th>提取图像轮廓特征</th>
+	  </tr>
+	  <tr>
+	    <th> </th>
+	    <th>correct.py</th>
+	    <th>图像的偏移校正</th>
+	  </tr>
+	  <tr>
+	    <th> </th>
+	    <th>histogram.py</th>
+	    <th>提取图像HOG特征</th>
+	  </tr>
+	  <tr>
+	    <th> </th>
+	    <th>sharpening.py</th>
+	    <th>提取图像锐化特征</th>
+	  </tr>
+	  <tr>
+	    <th> </th>
+	    <th>subsampling.py</th>
+	    <th>提取图像池化特征</th>
+	  </tr>
+	  <tr>
+	    <th>model</th>
+	    <th>MNIST_CNN.py</th>
+	    <th>建立CNN模型</th>
+	  </tr>
+	  <tr>
+	    <th>model</th>
+	    <th>MNIST_KNN.py</th>
+	    <th>建立KNN模型</th>
+	  </tr>
+	  <tr>
+	    <th>model</th>
+	    <th>MNIST_Softmax.py</th>
+	    <th>建立Softmax模型</th>
+	  </tr>
+	  <tr>
+	    <th>main</th>
+	    <th>mnist_GUI.py</th>
+	    <th>主函数体，执行GUI界面</th>
+	  </tr>
+	  <tr>
+	    <th>other</th>
+	    <th>MNIST_datasets_decode.py</th>
+	    <th>解码MNIST标准数据集</th>
+	  </tr>
+	  <tr>
+	    <th> </th>
+	    <th>mnist_gui_design.py</th>
+	    <th>GUI控件布局</th>
+	  </tr>
+    </table>
+</div>
 |模块		|包含文件			|功能说明              |
 |dataload	|load_MNIST_data.py		|载入MNIST数据集	   |
 |feature	|contour.py			|提取图像轮廓特征      |
