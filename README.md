@@ -1,87 +1,87 @@
 # mnist_recognition
-ÊÖÐ´ÌåÊý×ÖÊ¶±ðµÄÊ¾Àý£¬½çÃæ¿ÉÑ¡²»Í¬Ä£ÐÍ
+æ‰‹å†™ä½“æ•°å­—è¯†åˆ«çš„ç¤ºä¾‹ï¼Œç•Œé¢å¯é€‰ä¸åŒæ¨¡åž‹
 
-×÷Õß£ºIanpanda
+ä½œè€…ï¼šIanpanda
 
-ÊµÏÖÁËÈý¸öÄ£ÐÍ¶ÔMNISTÊý¾Ý¼¯µÄÊ¶±ð(KNN¡¢Softmax¡¢CNN)
+å®žçŽ°äº†ä¸‰ä¸ªæ¨¡åž‹å¯¹MNISTæ•°æ®é›†çš„è¯†åˆ«(KNNã€Softmaxã€CNN)
 
-±¾ÏµÍ³ÔËÐÐÐèÒªÓÃ»§È·ÈÏÒÔÏÂÒÀÀµ»·¾³ÒÑ¾­ÅäÖÃÍê³É£º
-1¡¢Python 3.5(64Î») ¼°ÒÔÉÏ°æ±¾£»<br>
-2¡¢numpy 1.13.3 ¼°ÒÔÉÏ°æ±¾£»<br>
-3¡¢TensorFlow 1.3.0 ¼°ÒÔÉÏ°æ±¾(ÈôÔËÐÐGPU°æ±¾£¬ÐèÅäÖÃcuda v8.0¼°cudnn¿â)£»<br>
-4¡¢opencv-python 3.3.1 ¼°ÒÔÉÏ°æ±¾£»<br>
-5¡¢PyQt5 5.6 ¼°ÒÔÉÏ°æ±¾£»<br>
-6¡¢½«tensorboard.exeËùÔÚÎÄ¼þ¼Ð¼ÓÈëÏµÍ³»·¾³Â·¾¶PathÖ®ÖÐ(ÎÄ¼þ¼ÐÎª¡°*\Scripts¡±£¬*´ú±íÓÃ»§python°²×°Â·¾¶ÎÄ¼þ¼Ð)¡£<br>
-×¢£º°²×°ÒÀÀµ¿â¿ÉÊ¹ÓÃpipÃüÁî°²×°£¬Èç°²×°opencv-python¿ÉÊ¹ÓÃÃüÁî¡°pip install opencv-python¡±°²×°¡£<br>
+æœ¬ç³»ç»Ÿè¿è¡Œéœ€è¦ç”¨æˆ·ç¡®è®¤ä»¥ä¸‹ä¾èµ–çŽ¯å¢ƒå·²ç»é…ç½®å®Œæˆï¼š
+1ã€Python 3.5(64ä½) åŠä»¥ä¸Šç‰ˆæœ¬ï¼›<br>
+2ã€numpy 1.13.3 åŠä»¥ä¸Šç‰ˆæœ¬ï¼›<br>
+3ã€TensorFlow 1.3.0 åŠä»¥ä¸Šç‰ˆæœ¬(è‹¥è¿è¡ŒGPUç‰ˆæœ¬ï¼Œéœ€é…ç½®cuda v8.0åŠcudnnåº“)ï¼›<br>
+4ã€opencv-python 3.3.1 åŠä»¥ä¸Šç‰ˆæœ¬ï¼›<br>
+5ã€PyQt5 5.6 åŠä»¥ä¸Šç‰ˆæœ¬ï¼›<br>
+6ã€å°†tensorboard.exeæ‰€åœ¨æ–‡ä»¶å¤¹åŠ å…¥ç³»ç»ŸçŽ¯å¢ƒè·¯å¾„Pathä¹‹ä¸­(æ–‡ä»¶å¤¹ä¸ºâ€œ*\Scriptsâ€ï¼Œ*ä»£è¡¨ç”¨æˆ·pythonå®‰è£…è·¯å¾„æ–‡ä»¶å¤¹)ã€‚<br>
+æ³¨ï¼šå®‰è£…ä¾èµ–åº“å¯ä½¿ç”¨pipå‘½ä»¤å®‰è£…ï¼Œå¦‚å®‰è£…opencv-pythonå¯ä½¿ç”¨å‘½ä»¤â€œpip install opencv-pythonâ€å®‰è£…ã€‚<br>
 
-±¾ÏµÍ³ÎÄ¼þËµÃ÷
+æœ¬ç³»ç»Ÿæ–‡ä»¶è¯´æ˜Ž
 ---
 <div>
     <table border="0">
 	  <tr>
-	    <th>Ä£¿é</th>
-	    <th>°üº¬ÎÄ¼þ</th>
-	    <th>¹¦ÄÜËµÃ÷</th>
+	    <th>æ¨¡å—</th>
+	    <th>åŒ…å«æ–‡ä»¶</th>
+	    <th>åŠŸèƒ½è¯´æ˜Ž</th>
 	  </tr>
 	  <tr>
 	    <td>dataload</td>
 	    <td>load_MNIST_data.py</td>
-	    <td>ÔØÈëMNISTÊý¾Ý¼¯</td>
+	    <td>è½½å…¥MNISTæ•°æ®é›†</td>
 	  </tr>
 	  <tr>
 	    <td>feature</td>
 	    <td>contour.py</td>
-	    <td>ÌáÈ¡Í¼ÏñÂÖÀªÌØÕ÷</td>
+	    <td>æå–å›¾åƒè½®å»“ç‰¹å¾</td>
 	  </tr>
 	  <tr>
 	    <td> </td>
 	    <td>correct.py</td>
-	    <td>Í¼ÏñµÄÆ«ÒÆÐ£Õý</td>
+	    <td>å›¾åƒçš„åç§»æ ¡æ­£</td>
 	  </tr>
 	  <tr>
 	    <td> </td>
 	    <td>histogram.py</td>
-	    <td>ÌáÈ¡Í¼ÏñHOGÌØÕ÷</td>
+	    <td>æå–å›¾åƒHOGç‰¹å¾</td>
 	  </tr>
 	  <tr>
 	    <td> </td>
 	    <td>sharpening.py</td>
-	    <td>ÌáÈ¡Í¼ÏñÈñ»¯ÌØÕ÷</td>
+	    <td>æå–å›¾åƒé”åŒ–ç‰¹å¾</td>
 	  </tr>
 	  <tr>
 	    <td> </td>
 	    <td>subsampling.py</td>
-	    <td>ÌáÈ¡Í¼Ïñ³Ø»¯ÌØÕ÷</td>
+	    <td>æå–å›¾åƒæ± åŒ–ç‰¹å¾</td>
 	  </tr>
 	  <tr>
 	    <td>model</td>
 	    <td>MNIST_CNN.py</td>
-	    <td>½¨Á¢CNNÄ£ÐÍ</td>
+	    <td>å»ºç«‹CNNæ¨¡åž‹</td>
 	  </tr>
 	  <tr>
-	    <td>model</td>
+	    <td></td>
 	    <td>MNIST_KNN.py</td>
-	    <td>½¨Á¢KNNÄ£ÐÍ</td>
+	    <td>å»ºç«‹KNNæ¨¡åž‹</td>
 	  </tr>
 	  <tr>
-	    <td>model</td>
+	    <td></td>
 	    <td>MNIST_Softmax.py</td>
-	    <td>½¨Á¢SoftmaxÄ£ÐÍ</td>
+	    <td>å»ºç«‹Softmaxæ¨¡åž‹</td>
 	  </tr>
 	  <tr>
 	    <td>main</td>
 	    <td>mnist_GUI.py</td>
-	    <td>Ö÷º¯ÊýÌå£¬Ö´ÐÐGUI½çÃæ</td>
+	    <td>ä¸»å‡½æ•°ä½“ï¼Œæ‰§è¡ŒGUIç•Œé¢</td>
 	  </tr>
 	  <tr>
 	    <td>other</td>
 	    <td>MNIST_datasets_decode.py</td>
-	    <td>½âÂëMNIST±ê×¼Êý¾Ý¼¯</td>
+	    <td>è§£ç MNISTæ ‡å‡†æ•°æ®é›†</td>
 	  </tr>
 	  <tr>
-	    <td> </td>
+	    <td></td>
 	    <td>mnist_gui_design.py</td>
-	    <td>GUI¿Ø¼þ²¼¾Ö</td>
+	    <td>GUIæŽ§ä»¶å¸ƒå±€</td>
 	  </tr>
     </table>
 </div>
