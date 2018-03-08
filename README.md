@@ -15,18 +15,18 @@
 注：安装依赖库可使用pip命令安装，如安装opencv-python可使用命令“pip install opencv-python”安装。<br>
 
 			本系统文件说明
-模块		包含文件			功能说明	<br>
-dataload	load_MNIST_data.py		载入MNIST数据集	<br>
-feature	contour.py			提取图像轮廓特征	<br>
- 		correct.py			图像的偏移校正	<br>
- 		histogram.py			提取图像HOG特征	<br>
- 		sharpening.py			提取图像锐化特征	<br>
- 		subsampling.py		提取图像池化特征	<br>
-model		MNIST_CNN.py			建立CNN模型	<br>
- 		MNIST_KNN.py			建立KNN模型	<br>
- 		MNIST_Softmax.py		建立Softmax模型	<br>
-		MNIST_datasets_decode.py	解码MNIST标准数据集	<br>
-主函数		mnist_GUI.py			主函数体，执行GUI界面	<br>
-		mnist_gui_design.py		GUI控件布局	<br>
+		模块		包含文件			功能说明
+		dataload	load_MNIST_data.py		载入MNIST数据集
+		feature	contour.py			提取图像轮廓特征
+ 				correct.py			图像的偏移校正
+ 				histogram.py			提取图像HOG特征
+ 				sharpening.py			提取图像锐化特征
+ 				subsampling.py		提取图像池化特征
+		model		MNIST_CNN.py			建立CNN模型
+ 				MNIST_KNN.py			建立KNN模型
+ 				MNIST_Softmax.py		建立Softmax模型
+				MNIST_datasets_decode.py	解码MNIST标准数据集
+		主函数		mnist_GUI.py			主函数体，执行GUI界面
+				mnist_gui_design.py		GUI控件布局
 
 
